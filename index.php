@@ -66,7 +66,8 @@ include('create-token.php');
 
    <!-- Implementation -->
    <script>
-     //Displays PayPal buttons
+     //Displays PayPal buttons 
+	   // test comment
      paypal.Buttons({
        commit: false,
           createOrder: function(data, actions) {
