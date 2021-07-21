@@ -15,7 +15,7 @@ include('create-token.php');
 <body>
 
 <!-- JavaScript SDK -->
- <script src="https://www.paypal.com/sdk/js?components=hosted-fields,buttons&client-id=<?php echo $clientId; ?>" data-client-token="<?php echo $client_token; ?>"></script>
+ <script src="https://www.paypal.com/sdk/js?components=hosted-fields,buttons&client-id=<?php echo $clientId; ?>&currency=EUR" data-client-token="<?php echo $client_token; ?>"></script>
 
    <!-- Buttons container -->
    <table border="0" align="center" valign="top" bgcolor="#FFFFFF" style="width:39%">
@@ -75,7 +75,8 @@ include('create-token.php');
            return actions.order.create({
              purchase_units: [{
                amount: {
-                 value: '2'
+                 value: '2
+		       '
                }
              }]
            });
