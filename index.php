@@ -75,8 +75,7 @@ include('create-token.php');
            return actions.order.create({
              purchase_units: [{
                amount: {
-                 value: '2
-		       '
+                 value: '24'
                }
              }]
            });
