@@ -69,13 +69,17 @@ include('create-token.php');
      //Displays PayPal buttons 
 	   // test comment
      paypal.Buttons({
-       commit: false,
+       commit: true,
+       style: {
+	      layout:'vertical'
+       },
           createOrder: function(data, actions) {
            // This function sets up the details of the transaction, including the amount and line item details
            return actions.order.create({
              purchase_units: [{
                amount: {
-                 value: '24'
+                 value: '24',
+		 currency : 'EUR'
                }
              }]
            });
